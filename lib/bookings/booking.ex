@@ -14,7 +14,8 @@ defmodule Flightex.Bookings.Booking do
       when is_bitstring(departure_string) and
              is_bitstring(leaving_from) and
              is_bitstring(going_to) and
-             is_bitstring(user_id) do
+             is_bitstring(user_id) and
+             is_bitstring(id) do
     with {:ok, departure_date} <- NaiveDateTime.from_iso8601(departure_string),
          {:ok, valid_user_id} <- ValidateUUID.call(user_id),
          {:ok, valid_id} <- ValidateUUID.call(id) do

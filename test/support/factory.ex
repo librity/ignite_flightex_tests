@@ -24,7 +24,7 @@ defmodule Flightex.Factory do
 
     %Booking{
       id: "450adae8-3a94-4634-8c0d-c4b56572e390",
-      departure: "2014-03-04 23:59:59",
+      departure: NaiveDateTime.from_iso8601!("2014-03-04 23:59:59"),
       leaving_from: "LAX",
       going_to: "Tokyo",
       user_id: user_id
@@ -36,5 +36,6 @@ defmodule Flightex.Factory do
     |> Map.from_struct()
     |> Map.delete(:id)
     |> Map.delete(:user_id)
+    |> Map.put(:departure, "2014-03-04 23:59:59")
   end
 end

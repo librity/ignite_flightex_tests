@@ -225,3 +225,4 @@ eb93ff63-e66c-4275-bde3-8c8bf1fb9e11,LAX,Tokyo,2014-02-05 23:59:59
 - https://marketplace.visualstudio.com/items?itemName=pantajoe.vscode-elixir-credo
 - https://stackoverflow.com/questions/51600416/elixir-add-timezone-data-to-naive-date-time
 - https://stackoverflow.com/questions/40444970/how-to-convert-a-string-into-an-ecto-datetime-in-elixir
+- https://stackoverflow.com/questions/33046037/date-ranges-in-elixir

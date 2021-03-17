@@ -24,7 +24,7 @@ defmodule Flightex.Factory do
 
     %Booking{
       id: UUID.uuid4(),
-      departure: NaiveDateTime.from_iso8601!("2014-03-04 23:59:59"),
+      departure: ~N[2014-03-04 23:59:59],
       leaving_from: "LAX",
       going_to: "Tokyo",
       user_id: user_id

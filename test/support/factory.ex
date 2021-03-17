@@ -6,7 +6,7 @@ defmodule Flightex.Factory do
 
   def user_factory do
     %User{
-      id: "4545beed-fa92-4794-a544-e6378f1fcb58",
+      id: UUID.uuid4(),
       name: "Iggy Azalea",
       email: "iggy@murderbusiness.org",
       cpf: "1234567"
@@ -23,7 +23,7 @@ defmodule Flightex.Factory do
     %{id: user_id} = build(:user)
 
     %Booking{
-      id: "450adae8-3a94-4634-8c0d-c4b56572e390",
+      id: UUID.uuid4(),
       departure: NaiveDateTime.from_iso8601!("2014-03-04 23:59:59"),
       leaving_from: "LAX",
       going_to: "Tokyo",
